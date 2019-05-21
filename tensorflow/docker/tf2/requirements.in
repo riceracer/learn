@@ -1,0 +1,7 @@
+scikit-learn==0.20.2
+comet-ml==1.0.51
+pytest==4.2.0
+pytest-xdist==1.26.1
+pandas==0.24.1
+imblearn==0.0
+scikit-optimize

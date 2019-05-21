@@ -2,6 +2,8 @@
 # https://www.tensorflow.org/overview/
 
 import tensorflow as tf
+#tf.debugging.set_log_device_placement(True)
+
 mnist = tf.keras.datasets.mnist
 
 (x_train, y_train),(x_test, y_test) = mnist.load_data()
