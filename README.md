@@ -24,4 +24,5 @@ sudo -H pip3 install virtualenvwrapper
 export WORKON_HOME=~/.virtualenvs
 export VIRTUALENVWRAPPER_PYTHON=python3
 source /usr/local/bin/virtualenvwrapper.sh
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 ```
