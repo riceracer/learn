@@ -26,3 +26,8 @@ export VIRTUALENVWRAPPER_PYTHON=python3
 source /usr/local/bin/virtualenvwrapper.sh
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/cuda/extras/CUPTI/lib64
 ```
+
+## install nvidia-docker
+
+Instructions here: https://github.com/NVIDIA/nvidia-docker
+* install version 2.0 or greater
