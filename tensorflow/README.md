@@ -28,6 +28,11 @@ And run
 nvidia-docker run -u $(id -u):$(id -g) -it --rm --name tf2 -v ~/code/learn/tensorflow:/app tf2:latest /bin/bash
 ```
 
+or use run script:
+```
+./docker/run_tf2_docker.sh
+```
+
 Check if tensorflow is actually using GPU
 
 ```
