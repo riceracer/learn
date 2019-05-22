@@ -10,6 +10,17 @@ pip-compile requirements.in
 pip install -r requirements.txt
 ```
 
+## Python requirements
+
+I'm using python 3.5 or 3.6.
+
+You may also need to install the extra things below:
+
+```
+# for matplotlib
+sudo apt-get install python3-tk
+```
+
 ## GPU
 
 Follow instructions here: https://www.tensorflow.org/install/gpu

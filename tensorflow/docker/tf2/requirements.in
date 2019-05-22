@@ -5,3 +5,4 @@ pytest-xdist==1.26.1
 pandas==0.24.1
 imblearn==0.0
 scikit-optimize
+matplotlib==3.0.3

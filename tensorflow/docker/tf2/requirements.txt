@@ -12,30 +12,34 @@ chardet==3.0.4            # via requests
 comet-git-pure==0.19.11   # via comet-ml
 comet-ml==1.0.51
 configobj==5.0.6          # via everett
+cycler==0.10.0            # via matplotlib
 everett[ini]==1.0.2       # via comet-ml
 execnet==1.6.0            # via pytest-xdist
 idna==2.8                 # via requests
 imbalanced-learn==0.4.3   # via imblearn
 imblearn==0.0
 jsonschema==3.0.1         # via comet-ml
+kiwisolver==1.1.0         # via matplotlib
+matplotlib==3.0.3
 more-itertools==5.0.0     # via pytest
 netifaces==0.10.9         # via comet-ml
-numpy==1.16.3             # via imbalanced-learn, pandas, scikit-learn, scikit-optimize, scipy
+numpy==1.16.3             # via imbalanced-learn, matplotlib, pandas, scikit-learn, scikit-optimize, scipy
 nvidia-ml-py3==7.352.0    # via comet-ml
 pandas==0.24.1
 pluggy==0.9.0             # via pytest
 py==1.8.0                 # via pytest
+pyparsing==2.4.0          # via matplotlib
 pyrsistent==0.15.1        # via jsonschema
 pytest-forked==1.0.2      # via pytest-xdist
 pytest-xdist==1.26.1
 pytest==4.2.0
-python-dateutil==2.8.0    # via pandas
+python-dateutil==2.8.0    # via matplotlib, pandas
 pytz==2019.1              # via pandas
 requests==2.21.0          # via comet-ml
 scikit-learn==0.20.2
 scikit-optimize==0.5.2
 scipy==1.2.1              # via imbalanced-learn, scikit-learn, scikit-optimize
-six==1.12.0               # via comet-ml, configobj, jsonschema, more-itertools, pyrsistent, pytest, pytest-xdist, python-dateutil, websocket-client
+six==1.12.0               # via comet-ml, configobj, cycler, jsonschema, more-itertools, pyrsistent, pytest, pytest-xdist, python-dateutil, websocket-client
 urllib3==1.24.2           # via comet-git-pure, requests
 websocket-client==0.56.0  # via comet-ml
 wurlitzer==1.0.2          # via comet-ml
