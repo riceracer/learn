@@ -6,3 +6,5 @@ pandas==0.24.1
 imblearn==0.0
 scikit-optimize
 matplotlib==3.0.3
+tensorflow-hub==0.4.0
+tensorflow-datasets==1.0.2

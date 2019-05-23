@@ -4,6 +4,7 @@
 #
 #    pip-compile requirements.in
 #
+absl-py==0.7.1            # via tensorflow-datasets
 apipkg==1.5               # via execnet
 atomicwrites==1.3.0       # via pytest
 attrs==19.1.0             # via jsonschema, pytest
@@ -13,8 +14,11 @@ comet-git-pure==0.19.11   # via comet-ml
 comet-ml==1.0.51
 configobj==5.0.6          # via everett
 cycler==0.10.0            # via matplotlib
+dill==0.2.9               # via tensorflow-datasets
 everett[ini]==1.0.2       # via comet-ml
 execnet==1.6.0            # via pytest-xdist
+future==0.17.1            # via tensorflow-datasets
+googleapis-common-protos==1.6.0  # via tensorflow-metadata
 idna==2.8                 # via requests
 imbalanced-learn==0.4.3   # via imblearn
 imblearn==0.0
@@ -23,10 +27,13 @@ kiwisolver==1.1.0         # via matplotlib
 matplotlib==3.0.3
 more-itertools==5.0.0     # via pytest
 netifaces==0.10.9         # via comet-ml
-numpy==1.16.3             # via imbalanced-learn, matplotlib, pandas, scikit-learn, scikit-optimize, scipy
+numpy==1.16.3             # via imbalanced-learn, matplotlib, pandas, scikit-learn, scikit-optimize, scipy, tensorflow-datasets, tensorflow-hub
 nvidia-ml-py3==7.352.0    # via comet-ml
 pandas==0.24.1
 pluggy==0.9.0             # via pytest
+promise==2.2.1            # via tensorflow-datasets
+protobuf==3.7.1           # via googleapis-common-protos, tensorflow-datasets, tensorflow-hub, tensorflow-metadata
+psutil==5.6.2             # via tensorflow-datasets
 py==1.8.0                 # via pytest
 pyparsing==2.4.0          # via matplotlib
 pyrsistent==0.15.1        # via jsonschema
@@ -35,11 +42,17 @@ pytest-xdist==1.26.1
 pytest==4.2.0
 python-dateutil==2.8.0    # via matplotlib, pandas
 pytz==2019.1              # via pandas
-requests==2.21.0          # via comet-ml
+requests==2.21.0          # via comet-ml, tensorflow-datasets
 scikit-learn==0.20.2
 scikit-optimize==0.5.2
 scipy==1.2.1              # via imbalanced-learn, scikit-learn, scikit-optimize
-six==1.12.0               # via comet-ml, configobj, cycler, jsonschema, more-itertools, pyrsistent, pytest, pytest-xdist, python-dateutil, websocket-client
+six==1.12.0               # via absl-py, comet-ml, configobj, cycler, jsonschema, more-itertools, promise, protobuf, pyrsistent, pytest, pytest-xdist, python-dateutil, tensorflow-datasets, tensorflow-hub, websocket-client
+tensorflow-datasets==1.0.2
+tensorflow-hub==0.4.0
+tensorflow-metadata==0.13.0  # via tensorflow-datasets
+termcolor==1.1.0          # via tensorflow-datasets
+tqdm==4.32.1              # via tensorflow-datasets
 urllib3==1.24.2           # via comet-git-pure, requests
 websocket-client==0.56.0  # via comet-ml
+wrapt==1.11.1             # via tensorflow-datasets
 wurlitzer==1.0.2          # via comet-ml
