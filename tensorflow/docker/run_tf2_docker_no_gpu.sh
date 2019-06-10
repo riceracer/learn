@@ -6,7 +6,7 @@
 
 # With display for matplotlib
 # Volume PWD to app mounts in all the code for local editing
-nvidia-docker run -it --rm --name tf2 \
+docker run -it --rm --name tf2 \
    --env="DISPLAY" \
    --workdir=/app \
    -v "$PWD":/app \
