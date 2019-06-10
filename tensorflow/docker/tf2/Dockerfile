@@ -1,7 +1,9 @@
-FROM tensorflow/tensorflow:2.0.0a0-gpu-py3
+FROM tensorflow/tensorflow:2.0.0b0-gpu-py3
 
-RUN apt-get update
-RUN apt-get install -y python3-tk
+#RUN apt-get update
+# This is set so tzdata doesn't ask where you live during a docker build
+ARG DEBIAN_FRONTEND=noninteractive
+RUN apt-get install -y tzdata python3-tk
 
 WORKDIR /dependencies
 COPY requirements.txt /dependencies/requirements.txt
