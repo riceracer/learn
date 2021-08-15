@@ -11,6 +11,9 @@ python3 process_behavior_chart.py AMZN.csv Date Close
 
 python3 process_behavior_chart.py trade_def.csv Date Deficit
 
+# make a plot with the average based on a certain date range
+python3 process_behavior_chart.py trade_def.csv Date Deficit --min_idx 0 --max_idx 6
+
 PENDING / TODO:
 * Add an argument flag to plot the metric as a growing line instead of horizontal (e.g. for stocks)
 """
